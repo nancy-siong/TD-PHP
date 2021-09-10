@@ -8,16 +8,23 @@
     <body>
         Voici le résultat du script PHP : 
         <?php
-          // Ceci est un commentaire PHP sur une ligne
-          /* Ceci est le 2ème type de commentaire PHP
-          sur plusieurs lignes */
-           
-          // On met la chaine de caractères "hello" dans la variable 'texte'
-          // Les noms de variable commencent par $ en PHP
-          $texte = "hello world !";
+          
+          $texte = "hello world ! <br><br>";
+          $prenom = "Marc";
 
-          // On écrit le contenu de la variable 'texte' dans la page Web
+          $voiture = "voiture <br>";
+          $marque = "marque <br>";
+          $couleur = "couleur <br>";
+
           echo $texte;
+
+
+            echo "Bonjour " . $prenom . "<br>" ;
+            echo "Bonjour $prenom<br>";
+            echo 'Bonjour $prenom<br>';
+
+            echo $prenom . "<br>";
+            echo "$prenom<br>";
         ?>
     </body>
 </html> 
