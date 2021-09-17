@@ -20,7 +20,7 @@ class Conf {
     return self::$databases['login'];
   }
 
-  static public function gethostname() {
+  static public function getHostname() {
     return self::$databases['hostname'];
   }
 
