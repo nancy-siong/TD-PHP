@@ -52,19 +52,24 @@
             echo "$prenom<br>";
 
 
-            echo "<p> 1) SANS TABLEAU : Voiture $immatriculation de couleur $couleur (couleur bleu) </p>";
+            echo "<p> 1) SANS TABLEAU : Voiture " . $immatriculation . "de couleur " . $couleur . "</p>";
 
-            echo "<p> 2) AVEC TABLEAU : Voiture " . $voiture['immatriculation'] . " de " . $voiture['couleur'] . " (couleur bleu) </p>";
+            echo "<p> 2) AVEC TABLEAU : Voiture " . $voiture['immatriculation'] . " de couleur " . $voiture['couleur'] . " </p>";
 
-            echo "<p> 3) AVEC LISTE : Voiture " . $voiture['immatriculation'] . " de " . $voiture['couleur'] . " (couleur bleu) </p>";
+            echo "<p> 3) AVEC LISTE : Voiture " . $voiture['immatriculation'] . " de couleur " . $voiture['couleur'] . " </p>";
 
-            echo "<ul>";
+    
+    echo "<ul> Liste de voiture : " ;
             foreach ($listeVoit as $cle => $valeur) {
-                echo "<li> $cle : $valeur <br>";
+            
+                //echo "<li>" . " $cle : " . ($valeur) . "<br></li>";
+                echo "<li> Voiture " . $valeur['marque'] . " " . $valeur['immatriculation'] . " de couleur " . $valeur['couleur'] . " </p></li>";
+        
             }
-
-
             echo "</ul>";
+
+
+        
 
 
 
