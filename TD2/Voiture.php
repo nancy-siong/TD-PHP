@@ -58,9 +58,10 @@ class Voiture {
     public static function getAllVoitures() {
     	$pdo = Model::getPDO();
 
-    	$rep = $pdo->query("SELECT * FROM voiture;");
+    	$rep = $pdo->query("SELECT * FROM Voiture;");
 
     	$rep->setFetchMode(PDO::FETCH_CLASS, 'Voiture');
+        
     	$tab_voit = $rep->fetchAll();
 
     	return $tab_voit;
