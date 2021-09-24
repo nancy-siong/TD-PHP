@@ -23,7 +23,7 @@ class Utilisateur {
 	public static function getAllUtilisateurs() {
         $pdo = Model::getPDO();
 
-        $rep = $pdo->query("SELECT * FROM utilisateurs");
+        $rep = $pdo->query("SELECT * FROM utilisateur");
 
         $rep->setFetchMode(PDO::FETCH_CLASS, 'Utilisateur');
 

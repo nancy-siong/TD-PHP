@@ -1,7 +1,7 @@
 <?php
 
-    require_once 'utilisateur.php';
-    require_once 'trajet.php';
+    require_once 'Utilisateur.php';
+    require_once 'Trajet.php';
 
     $tab_trajets = Trajet::getAllTrajets();
     $tab_user = Utilisateur::getAllUtilisateurs();

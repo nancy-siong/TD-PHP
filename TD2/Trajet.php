@@ -1,5 +1,9 @@
 <?php
+
+require_once 'Model.php';
+
 class Trajet {
+
 	
 	private $id;
 	private $depart;
@@ -8,7 +12,6 @@ class Trajet {
 	private $prix;
 	private $conducteur_login;
 
-	}
 
     public function __construct($data = NULL) {
 
@@ -37,7 +40,7 @@ class Trajet {
         $rep->setFetchMode(PDO::FETCH_CLASS, 'Trajet');
 
         $tab_trajets = $rep->fetchAll();
-        
+
         return $tab_trajets;
     }
 
