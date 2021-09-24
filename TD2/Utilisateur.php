@@ -26,8 +26,10 @@ class Utilisateur {
         $rep = $pdo->query("SELECT * FROM utilisateurs");
 
         $rep->setFetchMode(PDO::FETCH_CLASS, 'Utilisateur');
-        
-        return $rep->fetchAll();
+
+        $tab_users = $rep->fetchAll();
+
+        return $tab_users;
     }
 }
 
