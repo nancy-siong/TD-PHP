@@ -59,9 +59,9 @@ class Voiture {
               
     // une methode d'affichage.
     public function afficher() {
-        echo "$this->marque";
-        echo "$this->couleur";
-        echo "$this->immatriculation";
+        echo "$this->marque ";
+        echo "$this->couleur ";
+        echo "$this->immatriculation ";
     }
 
     public static function getAllVoitures() {

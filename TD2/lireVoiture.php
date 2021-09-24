@@ -35,7 +35,8 @@ foreach ($tab_voit as $value) {
 $tab_voit = Voiture::getAllVoitures();
 
 foreach ($tab_voit as $value) {
-    echo $value->afficher();
+    $value->afficher();
+    echo "<br>";
 }
 
 ?>
