@@ -52,7 +52,7 @@ class ModelVoiture {
     // un setter 
     public function setImmatricuation($i) {
         $taille = strlen($this->immatriculation);
-        if (taille <= 8) {
+        if ($taille <= 8) {
             $this->immatriculation = $i;
         }
     }
