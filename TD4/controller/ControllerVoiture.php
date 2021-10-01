@@ -23,7 +23,8 @@ class ControllerVoiture
     }
 
     public static function created() {
-        
-        //require('../view/voiture/create.php');
+        $mv = new ModelVoiture($_GET['marque'], $_GET['couleur'], $_GET['immat']);
+        $mv->save();
+        ControllerVoiture::readAll();
     }
 }
