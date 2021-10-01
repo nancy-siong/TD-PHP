@@ -17,4 +17,13 @@ class ControllerVoiture
         }
         else require('../view/voiture/detail.php');  //"redirige" vers la vue
     }
+
+    public static function create() {
+        require('../view/voiture/create.php');
+    }
+
+    public static function created() {
+        
+        //require('../view/voiture/create.php');
+    }
 }
