@@ -1,7 +1,8 @@
 <?php
 
 //require_once 'Model.php';
-require_once File::build_path('model','Model.php');
+require_once File::build_path(array('model','Model.php'));
+
 
 class Trajet {
 

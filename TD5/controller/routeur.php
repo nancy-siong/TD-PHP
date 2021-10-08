@@ -1,11 +1,11 @@
 <?php
 
 
-require_once '../lib/File.php';
+//require_once '../lib/File.php'; //déplacé dans index
 //require_once File::build_path('lib','File.php');
 
 
-require_once File::build_path('controller','ControllerVoiture.php');
+require_once File::build_path(array('controller','ControllerVoiture.php'));
 
 
 
