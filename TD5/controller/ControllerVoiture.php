@@ -2,30 +2,46 @@
 //require_once('../model/ModelVoiture.php'); // chargement du modèle
 require_once File::build_path(array('model','ModelVoiture.php'));
 
-class ControllerVoiture
-{
+class ControllerVoiture {
+
     public static function readAll()
     {
+        $controller='voiture';
+        $view='list';
+        $pagetitle='Liste des voitures';
+
         $tab_v = ModelVoiture::getAllVoitures();     //appel au modèle pour gerer la BD
         //require('../view/voiture/list.php');  //"redirige" vers la vue
-        require File::build_path(array('view','voiture','list.php'));
+        require File::build_path(array('view','view.php'));
+                                                //voiture','list.php
     }
+
 
     public static function read()
     {
+        $controller='voiture';
+        $view='detail';
+        $pagetitle='Informations';
+
         $v = ModelVoiture::getVoitureByImmat($_GET['immat']);
         if ($v == false) {
-            //require('../view/voiture/error.php'); 
-            require File::build_path(array('view','voiture','error.php'));
+                                        //('view','voiture','error.php'));
+            require File::build_path(array('view','view.php'));
         }
-        //else require('../view/voiture/detail.php');  //"redirige" vers la vue
-        else require File::build_path(array('view','voiture','detail.php'));
+                                            //('view','voiture','detail.php'));
+        else require File::build_path(array('view','view.php'));
     }
 
+
     public static function create() {
-        //require('../view/voiture/create.php');
-        require File::build_path(array('view','voiture','create.php'));
+        $controller='voiture';
+        $view='create';
+        $pagetitle='Creer';
+
+                                    //'view','voiture','create.php'));
+        require File::build_path(array('view','view.php'));
     }
+
 
     public static function created() {
         $mv = new ModelVoiture($_GET['marque'], $_GET['couleur'], $_GET['immat']);

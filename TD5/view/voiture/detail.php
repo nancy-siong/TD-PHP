@@ -1,9 +1,12 @@
 <!DOCTYPE html>
     <html>
+    <!--
     <head>
         <meta charset="UTF-8">
         <title>Details des voitures</title>
     </head>
+    -->
+    
     <body>
         <?php
         echo 'Marque : ' . $v->getMarque() . '.</p>';

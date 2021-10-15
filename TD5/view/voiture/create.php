@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+  <!--
     <head>
         <meta charset="utf-8" />
         <title> Formulaire </title>
     </head>
    
-    <body>
+    <body>-->
 
       <!--<form method="get" action="../../controller/routeur.php">-->
       <form method="get" action="index.php">
