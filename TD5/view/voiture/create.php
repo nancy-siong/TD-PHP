@@ -8,7 +8,7 @@
     <body>
 
       <!--<form method="get" action="../../controller/routeur.php">-->
-      <form method="get" action="../index.php">
+      <form method="get" action="index.php">
 
         <fieldset>
 

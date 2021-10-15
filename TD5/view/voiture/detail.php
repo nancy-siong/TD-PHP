@@ -9,6 +9,8 @@
         echo 'Marque : ' . $v->getMarque() . '.</p>';
         echo 'Couleur : ' . $v->getCouleur() . '.</p>';
         echo 'Immatriculation : ' . $v->getImmatriculation() . '.</p>';
+        //echo "<p> Voiture $v->getImmatriculation() </p>";
+
         ?>
     </body>
 </html>
