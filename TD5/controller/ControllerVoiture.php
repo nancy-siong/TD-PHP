@@ -44,8 +44,14 @@ class ControllerVoiture {
 
 
     public static function created() {
+        $controller='voiture';
+        $view='created';
+        $pagetitle='Voiture créée';
+
+        $tab_v = ModelVoiture::getAllVoitures(); 
         $mv = new ModelVoiture($_GET['marque'], $_GET['couleur'], $_GET['immat']);
         $mv->save();
-        ControllerVoiture::readAll();
+        require File::build_path(array('view','view.php'));
+        //ControllerVoiture::readAll();
     }
 }
