@@ -8,11 +8,15 @@
 require_once File::build_path(array('controller','ControllerVoiture.php'));
 
 
+$action = "readAll";
 
 // On recupère l'action passée dans l'URL
-$act = $_GET['action'];
+if (isset($_GET['action'])) {
+    $action = $_GET['action'];
+}
+
 
 // Appel de la méthode statique $action de ControllerVoiture
-ControllerVoiture::$act();
+ControllerVoiture::$action();
 
 ?>
