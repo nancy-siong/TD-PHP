@@ -124,7 +124,7 @@ class ModelVoiture {
     //DELETE FROM `voiture` WHERE `voiture`.`immatriculation` = 'vroum '
 
     public static function deleteByImmat($immat) {
-        $sql = "DELETE FROM `voiture` WHERE `voiture`.`immatriculation=:nom_tag";
+        $sql = "DELETE FROM voiture WHERE immatriculation=:nom_tag";
         
         $req_prep = Model::getPDO()->prepare($sql);
         $values = array(
